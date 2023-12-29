@@ -9,7 +9,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float walkSpeed;
     public float sprintSpeed;
     public float slideSpeed;
-
+    public float wallRunSpeed;
     private float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
 
@@ -59,13 +59,14 @@ public class PlayerMovementAdvanced : MonoBehaviour
     {
         walking,
         sprinting,
+        wallrunning,
         crouching,
         sliding,
         air
     }
 
     public bool sliding;
-
+    public bool wallrunning;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -132,6 +133,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void StateHandler()
     {
+        // Mode - Wall Running
+        if (wallrunning)
+        {
+            state = MovementState.wallrunning;
+            desiredMoveSpeed = wallRunSpeed;
+        }
         // Mode - Sliding
         if (sliding)
         {
@@ -235,7 +242,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
 
         // turn gravity off while on slope
-        rb.useGravity = !OnSlope();
+        if (!wallrunning)
+        {
+            rb.useGravity = !OnSlope();
+        }
     }
 
     private void SpeedControl()

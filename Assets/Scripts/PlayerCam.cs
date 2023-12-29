@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class PlayerCam : MonoBehaviour
 {
     public float sensX;
     public float sensY;
     public Transform orientation;
+    public Transform camHolder;
     float xRot;
     float yRot;
     // Start is called before the first frame update
@@ -24,8 +25,16 @@ public class PlayerCam : MonoBehaviour
         yRot += mouseX;
         xRot -= mouseY;
         xRot = Mathf.Clamp(xRot, -90f, 90f);
-        transform.rotation = Quaternion.Euler(xRot, yRot, 0);
+        camHolder.rotation = Quaternion.Euler(xRot, yRot, 0);
         orientation.rotation = Quaternion.Euler(0, yRot,0);
 
+    }
+    public void DoFov(float endValue)
+    {
+        GetComponent<Camera>().DOFieldOfView(endValue, 0.25f);
+    }
+    public void DoTilt(float zTilt)
+    {
+        transform.DOLocalRotate(new Vector3(0, 0, zTilt), 0.25f);
     }
 }
