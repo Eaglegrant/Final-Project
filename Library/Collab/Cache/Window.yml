@@ -1,0 +1,627 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - .collabignore
+    - Assets/Chests.meta
+    - Assets/Chests/Materials.meta
+    - Assets/Chests/Materials/Box.mat
+    - Assets/Chests/Materials/Box.mat.meta
+    - Assets/Chests/Materials/Chest.mat
+    - Assets/Chests/Materials/Chest.mat.meta
+    - Assets/Chests/Materials/Frame.mat
+    - Assets/Chests/Materials/Frame.mat.meta
+    - Assets/Chests/Materials/Handle.mat
+    - Assets/Chests/Materials/Handle.mat.meta
+    - Assets/Chests/Materials/Keyhole.mat
+    - Assets/Chests/Materials/Keyhole.mat.meta
+    - Assets/Chests/Materials/Lid.mat
+    - Assets/Chests/Materials/Lid.mat.meta
+    - Assets/Chests/Models.meta
+    - Assets/Chests/Models/pirate chest big.fbx
+    - Assets/Chests/Models/pirate chest big.fbx.meta
+    - Assets/Chests/Models/pirate chest lid.fbx
+    - Assets/Chests/Models/pirate chest lid.fbx.meta
+    - Assets/Chests/Models/pirate chest top big.fbx
+    - Assets/Chests/Models/pirate chest top big.fbx.meta
+    - Assets/Chests/Models/pirate chest.fbx
+    - Assets/Chests/Models/pirate chest.fbx.meta
+    - Assets/Chests/Models/small container lid.fbx
+    - Assets/Chests/Models/small container lid.fbx.meta
+    - Assets/Chests/Models/small container.fbx
+    - Assets/Chests/Models/small container.fbx.meta
+    - Assets/Chests/Prefabs.meta
+    - Assets/Chests/Prefabs/Pirate Chest Lid Big.prefab
+    - Assets/Chests/Prefabs/Pirate Chest Lid Big.prefab.meta
+    - Assets/Chests/Prefabs/Pirate Chest Lid.prefab
+    - Assets/Chests/Prefabs/Pirate Chest Lid.prefab.meta
+    - Assets/Chests/Prefabs/Pirate Chest big.prefab
+    - Assets/Chests/Prefabs/Pirate Chest big.prefab.meta
+    - Assets/Chests/Prefabs/Pirate Chest.prefab
+    - Assets/Chests/Prefabs/Pirate Chest.prefab.meta
+    - Assets/Chests/Prefabs/Small Container Lid.prefab
+    - Assets/Chests/Prefabs/Small Container Lid.prefab.meta
+    - Assets/Chests/Prefabs/Small Container.prefab
+    - Assets/Chests/Prefabs/Small Container.prefab.meta
+    - Assets/Chests/Textures.meta
+    - Assets/Chests/Textures/NormalMap.png
+    - Assets/Chests/Textures/NormalMap.png.meta
+    - Assets/Chests/Textures/sand.png
+    - Assets/Chests/Textures/sand.png.meta
+    - Assets/Collectibles.meta
+    - Assets/Collectibles/Cube.prefab
+    - Assets/Collectibles/Cube.prefab.meta
+    - Assets/Collectibles/Materials.meta
+    - Assets/Collectibles/Materials/Blue.mat
+    - Assets/Collectibles/Materials/Blue.mat.meta
+    - Assets/Collectibles/Materials/Collectibles 2.mat
+    - Assets/Collectibles/Materials/Collectibles 2.mat.meta
+    - Assets/Collectibles/Models.meta
+    - Assets/Collectibles/Models/CollectiblesSet2.fbx
+    - Assets/Collectibles/Models/CollectiblesSet2.fbx.meta
+    - Assets/Collectibles/Prefabs.meta
+    - Assets/Collectibles/Prefabs/Gem1Blue.prefab
+    - Assets/Collectibles/Prefabs/Gem1Blue.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem1Green.prefab
+    - Assets/Collectibles/Prefabs/Gem1Green.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem1Purple.prefab
+    - Assets/Collectibles/Prefabs/Gem1Purple.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem1Red.prefab
+    - Assets/Collectibles/Prefabs/Gem1Red.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem2Blue.prefab
+    - Assets/Collectibles/Prefabs/Gem2Blue.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem2Green.prefab
+    - Assets/Collectibles/Prefabs/Gem2Green.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem2Purple.prefab
+    - Assets/Collectibles/Prefabs/Gem2Purple.prefab.meta
+    - Assets/Collectibles/Prefabs/Gem2Red.prefab
+    - Assets/Collectibles/Prefabs/Gem2Red.prefab.meta
+    - Assets/Collectibles/Textures.meta
+    - Assets/Collectibles/Textures/Collectibles 2.png
+    - Assets/Collectibles/Textures/Collectibles 2.png.meta
+    - Assets/Landscape.meta
+    - Assets/Landscape/Materials.meta
+    - Assets/Landscape/Materials/Grass.mat
+    - Assets/Landscape/Materials/Grass.mat.meta
+    - Assets/Landscape/Materials/Low_Poly_Mat.mat
+    - Assets/Landscape/Materials/Low_Poly_Mat.mat.meta
+    - Assets/Landscape/Materials/Low_Poly_Mat_Variant1.mat
+    - Assets/Landscape/Materials/Low_Poly_Mat_Variant1.mat.meta
+    - Assets/Landscape/Models.meta
+    - Assets/Landscape/Models/Bench.fbx
+    - Assets/Landscape/Models/Bench.fbx.meta
+    - Assets/Landscape/Models/Bush.fbx
+    - Assets/Landscape/Models/Bush.fbx.meta
+    - Assets/Landscape/Models/Cloud.fbx
+    - Assets/Landscape/Models/Cloud.fbx.meta
+    - Assets/Landscape/Models/Flower Box.fbx
+    - Assets/Landscape/Models/Flower Box.fbx.meta
+    - Assets/Landscape/Models/Flower_1.fbx
+    - Assets/Landscape/Models/Flower_1.fbx.meta
+    - Assets/Landscape/Models/Flower_2.fbx
+    - Assets/Landscape/Models/Flower_2.fbx.meta
+    - Assets/Landscape/Models/Gazebo.fbx
+    - Assets/Landscape/Models/Gazebo.fbx.meta
+    - Assets/Landscape/Models/Grass_01.fbx
+    - Assets/Landscape/Models/Grass_01.fbx.meta
+    - Assets/Landscape/Models/Hill_01.fbx
+    - Assets/Landscape/Models/Hill_01.fbx.meta
+    - Assets/Landscape/Models/Lantern.fbx
+    - Assets/Landscape/Models/Lantern.fbx.meta
+    - Assets/Landscape/Models/Stone1.fbx
+    - Assets/Landscape/Models/Stone1.fbx.meta
+    - Assets/Landscape/Models/Stone2.fbx
+    - Assets/Landscape/Models/Stone2.fbx.meta
+    - Assets/Landscape/Models/Stone_Path_Bank.fbx
+    - Assets/Landscape/Models/Stone_Path_Bank.fbx.meta
+    - Assets/Landscape/Models/Stone_Path_Corner_Variant2.fbx
+    - Assets/Landscape/Models/Stone_Path_Corner_Variant2.fbx.meta
+    - Assets/Landscape/Models/Stone_Path_EdgePiece2.fbx
+    - Assets/Landscape/Models/Stone_Path_EdgePiece2.fbx.meta
+    - Assets/Landscape/Models/Stone_Path_Straight_Variant2.fbx
+    - Assets/Landscape/Models/Stone_Path_Straight_Variant2.fbx.meta
+    - Assets/Landscape/Models/Stone_Path_TPart.fbx
+    - Assets/Landscape/Models/Stone_Path_TPart.fbx.meta
+    - Assets/Landscape/Models/Tree1.fbx
+    - Assets/Landscape/Models/Tree1.fbx.meta
+    - Assets/Landscape/Models/Tree2.fbx
+    - Assets/Landscape/Models/Tree2.fbx.meta
+    - Assets/Landscape/Prefab.meta
+    - Assets/Landscape/Prefab/Bench.prefab
+    - Assets/Landscape/Prefab/Bench.prefab.meta
+    - Assets/Landscape/Prefab/Bush.prefab
+    - Assets/Landscape/Prefab/Bush.prefab.meta
+    - Assets/Landscape/Prefab/Cloud.prefab
+    - Assets/Landscape/Prefab/Cloud.prefab.meta
+    - Assets/Landscape/Prefab/Flower Box.prefab
+    - Assets/Landscape/Prefab/Flower Box.prefab.meta
+    - Assets/Landscape/Prefab/Flower_1.prefab
+    - Assets/Landscape/Prefab/Flower_1.prefab.meta
+    - Assets/Landscape/Prefab/Flower_2.prefab
+    - Assets/Landscape/Prefab/Flower_2.prefab.meta
+    - Assets/Landscape/Prefab/Gazebo.prefab
+    - Assets/Landscape/Prefab/Gazebo.prefab.meta
+    - Assets/Landscape/Prefab/Grass_01.prefab
+    - Assets/Landscape/Prefab/Grass_01.prefab.meta
+    - Assets/Landscape/Prefab/Hill_01.prefab
+    - Assets/Landscape/Prefab/Hill_01.prefab.meta
+    - Assets/Landscape/Prefab/Lantern.prefab
+    - Assets/Landscape/Prefab/Lantern.prefab.meta
+    - Assets/Landscape/Prefab/Stone1.prefab
+    - Assets/Landscape/Prefab/Stone1.prefab.meta
+    - Assets/Landscape/Prefab/Stone2.prefab
+    - Assets/Landscape/Prefab/Stone2.prefab.meta
+    - Assets/Landscape/Prefab/Stone_Path_Bank.prefab
+    - Assets/Landscape/Prefab/Stone_Path_Bank.prefab.meta
+    - Assets/Landscape/Prefab/Stone_Path_Corner.prefab
+    - Assets/Landscape/Prefab/Stone_Path_Corner.prefab.meta
+    - Assets/Landscape/Prefab/Stone_Path_EdgePiece.prefab
+    - Assets/Landscape/Prefab/Stone_Path_EdgePiece.prefab.meta
+    - Assets/Landscape/Prefab/Stone_Path_Straight.prefab
+    - Assets/Landscape/Prefab/Stone_Path_Straight.prefab.meta
+    - Assets/Landscape/Prefab/Stone_Path_TPart.prefab
+    - Assets/Landscape/Prefab/Stone_Path_TPart.prefab.meta
+    - Assets/Landscape/Prefab/Tree1.prefab
+    - Assets/Landscape/Prefab/Tree1.prefab.meta
+    - Assets/Landscape/Prefab/Tree2.prefab
+    - Assets/Landscape/Prefab/Tree2.prefab.meta
+    - Assets/Landscape/Texture.meta
+    - Assets/Landscape/Texture/LowPolyTexture.jpg
+    - Assets/Landscape/Texture/LowPolyTexture.jpg.meta
+    - Assets/Landscape/Texture/LowPolyTexture_Variant1.png
+    - Assets/Landscape/Texture/LowPolyTexture_Variant1.png.meta
+    - Assets/Music.meta
+    - Assets/Music/EpicMusicLoop1.mp3
+    - Assets/Music/EpicMusicLoop1.mp3.meta
+    - Assets/Music/HappyMusicLoop1.mp3
+    - Assets/Music/HappyMusicLoop1.mp3.meta
+    - Assets/Player.meta
+    - Assets/Player/Animations.meta
+    - Assets/Player/Animations/idle.fbx
+    - Assets/Player/Animations/idle.fbx.meta
+    - Assets/Player/Animations/jump.fbx
+    - Assets/Player/Animations/jump.fbx.meta
+    - Assets/Player/Animations/run.fbx
+    - Assets/Player/Animations/run.fbx.meta
+    - Assets/Player/Materials.meta
+    - Assets/Player/Materials/skaterFemaleA.mat
+    - Assets/Player/Materials/skaterFemaleA.mat.meta
+    - Assets/Player/Materials/skaterFemaleA.png
+    - Assets/Player/Materials/skaterFemaleA.png.meta
+    - Assets/Player/Player_Controller.controller
+    - Assets/Player/Player_Controller.controller.meta
+    - Assets/Player/Player_Model.fbx
+    - Assets/Player/Player_Model.fbx.meta
+    - Assets/Scenes/CityBlock.unity
+    - Assets/Scenes/CityBlock.unity.meta
+    - Assets/Scenes/Park.unity
+    - Assets/Scenes/Park.unity.meta
+    - Assets/Scenes/ParkSettings.lighting
+    - Assets/Scenes/ParkSettings.lighting.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/CameraFollow.cs
+    - Assets/Scripts/CameraFollow.cs.meta
+    - Assets/Scripts/Collect.cs
+    - Assets/Scripts/Collect.cs.meta
+    - Assets/Scripts/PlayerControls.cs
+    - Assets/Scripts/PlayerControls.cs.meta
+    - Assets/Scripts/RotateHover.cs
+    - Assets/Scripts/RotateHover.cs.meta
+    - Assets/Scripts/VehicleControl.cs
+    - Assets/Scripts/VehicleControl.cs.meta
+    - Assets/SimpleTownLite.meta
+    - Assets/SimpleTownLite/_Materials.meta
+    - Assets/SimpleTownLite/_Materials/Building_Apartment_02.mat
+    - Assets/SimpleTownLite/_Materials/Building_Apartment_02.mat.meta
+    - Assets/SimpleTownLite/_Materials/Building_BookStore.mat
+    - Assets/SimpleTownLite/_Materials/Building_BookStore.mat.meta
+    - Assets/SimpleTownLite/_Materials/Building_PizzaShop.mat
+    - Assets/SimpleTownLite/_Materials/Building_PizzaShop.mat.meta
+    - Assets/SimpleTownLite/_Materials/Props_Street.mat
+    - Assets/SimpleTownLite/_Materials/Props_Street.mat.meta
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Billboard.mat
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Billboard.mat.meta
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Dumpster.mat
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Dumpster.mat.meta
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Road.mat
+    - Assets/SimpleTownLite/_Materials/SimpleTownLite_Road.mat.meta
+    - Assets/SimpleTownLite/_Materials/Vehicle_HotdogTruck.mat
+    - Assets/SimpleTownLite/_Materials/Vehicle_HotdogTruck.mat.meta
+    - Assets/SimpleTownLite/_Materials/Vehicle_PizzaCar.mat
+    - Assets/SimpleTownLite/_Materials/Vehicle_PizzaCar.mat.meta
+    - Assets/SimpleTownLite/_Models.meta
+    - Assets/SimpleTownLite/_Models/apartment_large_thin_short.fbx
+    - Assets/SimpleTownLite/_Models/apartment_large_thin_short.fbx.meta
+    - Assets/SimpleTownLite/_Models/billboard_mesh.fbx
+    - Assets/SimpleTownLite/_Models/billboard_mesh.fbx.meta
+    - Assets/SimpleTownLite/_Models/bin_mesh.fbx
+    - Assets/SimpleTownLite/_Models/bin_mesh.fbx.meta
+    - Assets/SimpleTownLite/_Models/dumpster_mesh.fbx
+    - Assets/SimpleTownLite/_Models/dumpster_mesh.fbx.meta
+    - Assets/SimpleTownLite/_Models/hotdog_truck_seperate.fbx
+    - Assets/SimpleTownLite/_Models/hotdog_truck_seperate.fbx.meta
+    - Assets/SimpleTownLite/_Models/pizza_car_seperate.fbx
+    - Assets/SimpleTownLite/_Models/pizza_car_seperate.fbx.meta
+    - Assets/SimpleTownLite/_Models/pizza_shop.fbx
+    - Assets/SimpleTownLite/_Models/pizza_shop.fbx.meta
+    - Assets/SimpleTownLite/_Models/road_straight_mesh.fbx
+    - Assets/SimpleTownLite/_Models/road_straight_mesh.fbx.meta
+    - Assets/SimpleTownLite/_Models/store_small_mesh.fbx
+    - Assets/SimpleTownLite/_Models/store_small_mesh.fbx.meta
+    - Assets/SimpleTownLite/_Prefabs.meta
+    - Assets/SimpleTownLite/_Prefabs/Building_Apartment.prefab
+    - Assets/SimpleTownLite/_Prefabs/Building_Apartment.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Building_PizzaShop.prefab
+    - Assets/SimpleTownLite/_Prefabs/Building_PizzaShop.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Environment_Road.prefab
+    - Assets/SimpleTownLite/_Prefabs/Environment_Road.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Prop_Billboard.prefab
+    - Assets/SimpleTownLite/_Prefabs/Prop_Billboard.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Prop_Bin.prefab
+    - Assets/SimpleTownLite/_Prefabs/Prop_Bin.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Prop_Dumpster.prefab
+    - Assets/SimpleTownLite/_Prefabs/Prop_Dumpster.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Vehicles_HotdogTruck.prefab
+    - Assets/SimpleTownLite/_Prefabs/Vehicles_HotdogTruck.prefab.meta
+    - Assets/SimpleTownLite/_Prefabs/Vehicles_PizzaCar.prefab
+    - Assets/SimpleTownLite/_Prefabs/Vehicles_PizzaCar.prefab.meta
+    - Assets/SimpleTownLite/_Textures.meta
+    - Assets/SimpleTownLite/_Textures/STL_Building_Apartment_02.png
+    - Assets/SimpleTownLite/_Textures/STL_Building_Apartment_02.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Building_Pizza.png
+    - Assets/SimpleTownLite/_Textures/STL_Building_Pizza.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Props.png
+    - Assets/SimpleTownLite/_Textures/STL_Props.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Props_Billboard_02.png
+    - Assets/SimpleTownLite/_Textures/STL_Props_Billboard_02.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Props_Dumpster.png
+    - Assets/SimpleTownLite/_Textures/STL_Props_Dumpster.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Road.png
+    - Assets/SimpleTownLite/_Textures/STL_Road.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.png
+    - Assets/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.png.meta
+    - Assets/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.png
+    - Assets/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.png.meta
+    - Assets/SimpleTownLite/_Textures/Shop_Damaged.png
+    - Assets/SimpleTownLite/_Textures/Shop_Damaged.png.meta
+    - Assets/Sounds.meta
+    - Assets/Sounds/Alarms.wav
+    - Assets/Sounds/Alarms.wav.meta
+    - Assets/Sounds/Ambience Busy Road Not Very Busy 01.wav
+    - Assets/Sounds/Ambience Busy Road Not Very Busy 01.wav.meta
+    - Assets/Sounds/Ambience Busy Traffic 01.wav
+    - Assets/Sounds/Ambience Busy Traffic 01.wav.meta
+    - Assets/Sounds/Ambience Children Group Beach Playground 01.wav
+    - Assets/Sounds/Ambience Children Group Beach Playground 01.wav.meta
+    - Assets/Sounds/Ambience Downtown Area 01.wav
+    - Assets/Sounds/Ambience Downtown Area 01.wav.meta
+    - Assets/Sounds/Ambience Ducks Water And Bugs Near City 01.wav
+    - Assets/Sounds/Ambience Ducks Water And Bugs Near City 01.wav.meta
+    - Assets/Sounds/AmbientParkSounds.mp3
+    - Assets/Sounds/AmbientParkSounds.mp3.meta
+    - Assets/Sounds/Animal Ambience Crickets Near A Stream 01.wav
+    - Assets/Sounds/Animal Ambience Crickets Near A Stream 01.wav.meta
+    - Assets/Sounds/Animal Bird American Goldfinch Chirp 01.wav
+    - Assets/Sounds/Animal Bird American Goldfinch Chirp 01.wav.meta
+    - Assets/Sounds/Animal Dog Bark 08.wav
+    - Assets/Sounds/Animal Dog Bark 08.wav.meta
+    - Assets/Sounds/Animal Dog Bark 26.wav
+    - Assets/Sounds/Animal Dog Bark 26.wav.meta
+    - Assets/Sounds/CSFX_short-006.wav
+    - Assets/Sounds/CSFX_short-006.wav.meta
+    - Assets/Sounds/CSFX_short-012.wav
+    - Assets/Sounds/CSFX_short-012.wav.meta
+    - Assets/Sounds/CSFX_short-040.wav
+    - Assets/Sounds/CSFX_short-040.wav.meta
+    - Assets/Sounds/Car_Approach.Brake_03.wav
+    - Assets/Sounds/Car_Approach.Brake_03.wav.meta
+    - Assets/Sounds/Car_Idling-Mixture_ENGINE_04.wav
+    - Assets/Sounds/Car_Idling-Mixture_ENGINE_04.wav.meta
+    - Assets/Sounds/Car_Pass-By_02.wav
+    - Assets/Sounds/Car_Pass-By_02.wav.meta
+    - Assets/Sounds/Car_Pass-Bys_Steady-Mic_02.wav
+    - Assets/Sounds/Car_Pass-Bys_Steady-Mic_02.wav.meta
+    - Assets/Sounds/Cartoon Horn Small Hand Horn Honking 07.wav
+    - Assets/Sounds/Cartoon Horn Small Hand Horn Honking 07.wav.meta
+    - Assets/Sounds/Cartoon Whistle Motor Whistle 01.wav
+    - Assets/Sounds/Cartoon Whistle Motor Whistle 01.wav.meta
+    - Assets/Sounds/CartoonPop.wav
+    - Assets/Sounds/CartoonPop.wav.meta
+    - Assets/Sounds/CartoonRing.wav
+    - Assets/Sounds/CartoonRing.wav.meta
+    - Assets/Sounds/CartoonRising.wav
+    - Assets/Sounds/CartoonRising.wav.meta
+    - Assets/Sounds/CartoonTaDa.wav
+    - Assets/Sounds/CartoonTaDa.wav.meta
+    - Assets/Sounds/CartoonThud1.wav
+    - Assets/Sounds/CartoonThud1.wav.meta
+    - Assets/Sounds/CartoonThud2.wav
+    - Assets/Sounds/CartoonThud2.wav.meta
+    - Assets/Sounds/CartoonWhomp.wav
+    - Assets/Sounds/CartoonWhomp.wav.meta
+    - Assets/Sounds/CartoonWhoosh1.wav
+    - Assets/Sounds/CartoonWhoosh1.wav.meta
+    - Assets/Sounds/CartoonWhoosh2.wav
+    - Assets/Sounds/CartoonWhoosh2.wav.meta
+    - Assets/Sounds/Cinematic_Hit1.wav
+    - Assets/Sounds/Cinematic_Hit1.wav.meta
+    - Assets/Sounds/Cinematic_Transition_037.wav
+    - Assets/Sounds/Cinematic_Transition_037.wav.meta
+    - Assets/Sounds/Cinematic_Transition_101.wav
+    - Assets/Sounds/Cinematic_Transition_101.wav.meta
+    - Assets/Sounds/CollectCoin.wav
+    - Assets/Sounds/CollectCoin.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Glass_Crash_Designed_013.wav
+    - Assets/Sounds/Crash_Smash-Designed_Glass_Crash_Designed_013.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Glass_Crash_Designed_037.wav
+    - Assets/Sounds/Crash_Smash-Designed_Glass_Crash_Designed_037.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Metal_Crash_Designed_011.wav
+    - Assets/Sounds/Crash_Smash-Designed_Metal_Crash_Designed_011.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Mixed_Crash_Designed_013.wav
+    - Assets/Sounds/Crash_Smash-Designed_Mixed_Crash_Designed_013.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Plastic_Crash_Designed_009.wav
+    - Assets/Sounds/Crash_Smash-Designed_Plastic_Crash_Designed_009.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Plastic_Crash_Designed_027.wav
+    - Assets/Sounds/Crash_Smash-Designed_Plastic_Crash_Designed_027.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Stone_Crash_Designed_017.wav
+    - Assets/Sounds/Crash_Smash-Designed_Stone_Crash_Designed_017.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Stone_Crash_Designed_031.wav
+    - Assets/Sounds/Crash_Smash-Designed_Stone_Crash_Designed_031.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Wood_Crash_Designed_012.wav
+    - Assets/Sounds/Crash_Smash-Designed_Wood_Crash_Designed_012.wav.meta
+    - Assets/Sounds/Crash_Smash-Designed_Wood_Crash_Designed_037.wav
+    - Assets/Sounds/Crash_Smash-Designed_Wood_Crash_Designed_037.wav.meta
+    - Assets/Sounds/Dark_SciFi_Drone_Mixed_017.wav
+    - Assets/Sounds/Dark_SciFi_Drone_Mixed_017.wav.meta
+    - Assets/Sounds/Dark_SciFi_Drone_Mixed_044.wav
+    - Assets/Sounds/Dark_SciFi_Drone_Mixed_044.wav.meta
+    - Assets/Sounds/ElectricTypeWriters_R300_Head-Movement_Enter_HoldDown_01.wav
+    - Assets/Sounds/ElectricTypeWriters_R300_Head-Movement_Enter_HoldDown_01.wav.meta
+    - Assets/Sounds/FallingDown.wav
+    - Assets/Sounds/FallingDown.wav.meta
+    - Assets/Sounds/Film-Projector_Vintage_03.wav
+    - Assets/Sounds/Film-Projector_Vintage_03.wav.meta
+    - Assets/Sounds/Forest_Birds_Small-Stream.wav
+    - Assets/Sounds/Forest_Birds_Small-Stream.wav.meta
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_011.wav
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_011.wav.meta
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_016.wav
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_016.wav.meta
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_019.wav
+    - Assets/Sounds/GlitchFX_01_Dirt_SFX_019.wav.meta
+    - Assets/Sounds/GlitchFX_02_Percussion_019.wav
+    - Assets/Sounds/GlitchFX_02_Percussion_019.wav.meta
+    - Assets/Sounds/GlitchFX_02_Percussion_039.wav
+    - Assets/Sounds/GlitchFX_02_Percussion_039.wav.meta
+    - Assets/Sounds/GlitchFX_02_Percussion_049.wav
+    - Assets/Sounds/GlitchFX_02_Percussion_049.wav.meta
+    - Assets/Sounds/Glitched-Loop_007_01.wav
+    - Assets/Sounds/Glitched-Loop_007_01.wav.meta
+    - Assets/Sounds/Glitched-Loop_014_01.wav
+    - Assets/Sounds/Glitched-Loop_014_01.wav.meta
+    - Assets/Sounds/Glitched-Loop_020_01.wav
+    - Assets/Sounds/Glitched-Loop_020_01.wav.meta
+    - Assets/Sounds/Glitched-Loop_040_04.wav
+    - Assets/Sounds/Glitched-Loop_040_04.wav.meta
+    - Assets/Sounds/Human Female Clears Throat 01.wav
+    - Assets/Sounds/Human Female Clears Throat 01.wav.meta
+    - Assets/Sounds/Human Female Cough 01.wav
+    - Assets/Sounds/Human Female Cough 01.wav.meta
+    - Assets/Sounds/Human Female Whistle 02.wav
+    - Assets/Sounds/Human Female Whistle 02.wav.meta
+    - Assets/Sounds/Human Laugh Evil Rich Jerk 15.wav
+    - Assets/Sounds/Human Laugh Evil Rich Jerk 15.wav.meta
+    - Assets/Sounds/Human Male Clear Throat 01.wav
+    - Assets/Sounds/Human Male Clear Throat 01.wav.meta
+    - Assets/Sounds/Human Male Cough 02.wav
+    - Assets/Sounds/Human Male Cough 02.wav.meta
+    - Assets/Sounds/Human Male Karate Yell Deep Hi-Yah 01.wav
+    - Assets/Sounds/Human Male Karate Yell Deep Hi-Yah 01.wav.meta
+    - Assets/Sounds/Human Male Karate Yell Hey-Yah 01.wav
+    - Assets/Sounds/Human Male Karate Yell Hey-Yah 01.wav.meta
+    - Assets/Sounds/Human Male Sneeze 01.wav
+    - Assets/Sounds/Human Male Sneeze 01.wav.meta
+    - Assets/Sounds/Human Male Yell Woo Hoo 01.wav
+    - Assets/Sounds/Human Male Yell Woo Hoo 01.wav.meta
+    - Assets/Sounds/Human Male Yell Yeah 01.wav
+    - Assets/Sounds/Human Male Yell Yeah 01.wav.meta
+    - Assets/Sounds/Human Pirate Say Buried Treasure 01.wav
+    - Assets/Sounds/Human Pirate Say Buried Treasure 01.wav.meta
+    - Assets/Sounds/Human Pirate Say Yarr 01.wav
+    - Assets/Sounds/Human Pirate Say Yarr 01.wav.meta
+    - Assets/Sounds/Impact Blanket Hit By Metal Tube 01.wav
+    - Assets/Sounds/Impact Blanket Hit By Metal Tube 01.wav.meta
+    - Assets/Sounds/Impact Body Fall In Dirt 06.wav
+    - Assets/Sounds/Impact Body Fall In Dirt 06.wav.meta
+    - Assets/Sounds/Impact Body Fall On Dirt And Rock 01.wav
+    - Assets/Sounds/Impact Body Fall On Dirt And Rock 01.wav.meta
+    - Assets/Sounds/Impact Brick Drop On Leaf Debris Crunch 01.wav
+    - Assets/Sounds/Impact Brick Drop On Leaf Debris Crunch 01.wav.meta
+    - Assets/Sounds/Impact Can Garbage Can Dragged On Cement Floor 01.wav
+    - Assets/Sounds/Impact Can Garbage Can Dragged On Cement Floor 01.wav.meta
+    - Assets/Sounds/Impact Coins Shake And Drop To Ground 01.wav
+    - Assets/Sounds/Impact Coins Shake And Drop To Ground 01.wav.meta
+    - Assets/Sounds/Impact Garbage Can Drag Over Dirt And Rock Short 01.wav
+    - Assets/Sounds/Impact Garbage Can Drag Over Dirt And Rock Short 01.wav.meta
+    - Assets/Sounds/Impact Garbage Can Drop On Dirt And Rock 01.wav
+    - Assets/Sounds/Impact Garbage Can Drop On Dirt And Rock 01.wav.meta
+    - Assets/Sounds/Impact Glass Debris Dropped On Trash Can Lid 01.wav
+    - Assets/Sounds/Impact Glass Debris Dropped On Trash Can Lid 01.wav.meta
+    - Assets/Sounds/Impact Metal Cans Dumped On Cement Short 01.wav
+    - Assets/Sounds/Impact Metal Cans Dumped On Cement Short 01.wav.meta
+    - Assets/Sounds/Impact Metal Hit Cement Pop Cans 01.wav
+    - Assets/Sounds/Impact Metal Hit Cement Pop Cans 01.wav.meta
+    - Assets/Sounds/Impact Plastic Debris Hit By Wood Stick 01.wav
+    - Assets/Sounds/Impact Plastic Debris Hit By Wood Stick 01.wav.meta
+    - Assets/Sounds/Impact Rock Hit Broken Television Plastic 03.wav
+    - Assets/Sounds/Impact Rock Hit Broken Television Plastic 03.wav.meta
+    - Assets/Sounds/Impact TV With Sledge Hammer 04.wav
+    - Assets/Sounds/Impact TV With Sledge Hammer 04.wav.meta
+    - Assets/Sounds/Junk-Plastic-Glass_05.wav
+    - Assets/Sounds/Junk-Plastic-Glass_05.wav.meta
+    - Assets/Sounds/JustImpacts-Extension2_Metal_Hit_Crash_200.wav
+    - Assets/Sounds/JustImpacts-Extension2_Metal_Hit_Crash_200.wav.meta
+    - Assets/Sounds/JustImpacts-Extension2_Metal_Jolt_Rattle_Scrape_54.wav
+    - Assets/Sounds/JustImpacts-Extension2_Metal_Jolt_Rattle_Scrape_54.wav.meta
+    - Assets/Sounds/JustImpacts-Extension2_Misc_Hits_044.wav
+    - Assets/Sounds/JustImpacts-Extension2_Misc_Hits_044.wav.meta
+    - Assets/Sounds/JustImpacts_DESIGNED_075.wav
+    - Assets/Sounds/JustImpacts_DESIGNED_075.wav.meta
+    - Assets/Sounds/JustImpacts_DESIGNED_253.wav
+    - Assets/Sounds/JustImpacts_DESIGNED_253.wav.meta
+    - Assets/Sounds/JustImpacts_DESIGNED_300.wav
+    - Assets/Sounds/JustImpacts_DESIGNED_300.wav.meta
+    - Assets/Sounds/JustImpacts_PROCESSED_079.wav
+    - Assets/Sounds/JustImpacts_PROCESSED_079.wav.meta
+    - Assets/Sounds/JustImpacts_PROCESSED_180.wav
+    - Assets/Sounds/JustImpacts_PROCESSED_180.wav.meta
+    - Assets/Sounds/JustImpacts_PROCESSED_295.wav
+    - Assets/Sounds/JustImpacts_PROCESSED_295.wav.meta
+    - Assets/Sounds/JustImpacts_SIMPLE_255.wav
+    - Assets/Sounds/JustImpacts_SIMPLE_255.wav.meta
+    - Assets/Sounds/JustImpacts_SIMPLE_297.wav
+    - Assets/Sounds/JustImpacts_SIMPLE_297.wav.meta
+    - Assets/Sounds/JustImpacts_SIMPLE_336.wav
+    - Assets/Sounds/JustImpacts_SIMPLE_336.wav.meta
+    - Assets/Sounds/JustStones_Stones_Fine_Debris_010.wav
+    - Assets/Sounds/JustStones_Stones_Fine_Debris_010.wav.meta
+    - Assets/Sounds/JustStones_Stones_Hit_Drop_030.wav
+    - Assets/Sounds/JustStones_Stones_Hit_Drop_030.wav.meta
+    - Assets/Sounds/JustStones_Stones_Roll_Bounce_036.wav
+    - Assets/Sounds/JustStones_Stones_Roll_Bounce_036.wav.meta
+    - Assets/Sounds/JustStones_Stones_Scrape_Jolt_036.wav
+    - Assets/Sounds/JustStones_Stones_Scrape_Jolt_036.wav.meta
+    - Assets/Sounds/JustStones_Stones_Water_Hit_017.wav
+    - Assets/Sounds/JustStones_Stones_Water_Hit_017.wav.meta
+    - Assets/Sounds/JustTransitions_Transitions_127.wav
+    - Assets/Sounds/JustTransitions_Transitions_127.wav.meta
+    - Assets/Sounds/JustTransitions_Transitions_18.wav
+    - Assets/Sounds/JustTransitions_Transitions_18.wav.meta
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rod_Pole_007.wav
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rod_Pole_007.wav.meta
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rod_Pole_017.wav
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rod_Pole_017.wav.meta
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rope_Whip_021.wav
+    - Assets/Sounds/JustWhoosh3_Swoosh_Rope_Whip_021.wav.meta
+    - Assets/Sounds/JustWhoosh3_Whoosh_Cloth_Leather_Fight_007.wav
+    - Assets/Sounds/JustWhoosh3_Whoosh_Cloth_Leather_Fight_007.wav.meta
+    - Assets/Sounds/JustWhoosh3_Whoosh_Cloth_Leather_Fight_178.wav
+    - Assets/Sounds/JustWhoosh3_Whoosh_Cloth_Leather_Fight_178.wav.meta
+    - Assets/Sounds/JustWhoosh3_Whoosh_Fire_008.wav
+    - Assets/Sounds/JustWhoosh3_Whoosh_Fire_008.wav.meta
+    - Assets/Sounds/JustWhoosh3_Whoosh_ShaverPassBy_022.wav
+    - Assets/Sounds/JustWhoosh3_Whoosh_ShaverPassBy_022.wav.meta
+    - Assets/Sounds/JustWhoosh_II_097.wav
+    - Assets/Sounds/JustWhoosh_II_097.wav.meta
+    - Assets/Sounds/JustWhoosh_II_114.wav
+    - Assets/Sounds/JustWhoosh_II_114.wav.meta
+    - Assets/Sounds/JustWhoosh_II_126.wav
+    - Assets/Sounds/JustWhoosh_II_126.wav.meta
+    - Assets/Sounds/JustWhoosh_Whoosh_17.wav
+    - Assets/Sounds/JustWhoosh_Whoosh_17.wav.meta
+    - Assets/Sounds/JustWhoosh_Whoosh_22.wav
+    - Assets/Sounds/JustWhoosh_Whoosh_22.wav.meta
+    - Assets/Sounds/Just_Impacts_Extension-I_163.wav
+    - Assets/Sounds/Just_Impacts_Extension-I_163.wav.meta
+    - Assets/Sounds/Just_Impacts_Extension-I_167.wav
+    - Assets/Sounds/Just_Impacts_Extension-I_167.wav.meta
+    - Assets/Sounds/Just_Impacts_Extension-I_171.wav
+    - Assets/Sounds/Just_Impacts_Extension-I_171.wav.meta
+    - Assets/Sounds/Just_Transitions_Creepy-008.wav
+    - Assets/Sounds/Just_Transitions_Creepy-008.wav.meta
+    - Assets/Sounds/Just_Transitions_Creepy-031.wav
+    - Assets/Sounds/Just_Transitions_Creepy-031.wav.meta
+    - Assets/Sounds/Just_Transitions_SciFi-023.wav
+    - Assets/Sounds/Just_Transitions_SciFi-023.wav.meta
+    - Assets/Sounds/Just_Transitions_SciFi-040.wav
+    - Assets/Sounds/Just_Transitions_SciFi-040.wav.meta
+    - Assets/Sounds/Just_Transitions_SciFi-052.wav
+    - Assets/Sounds/Just_Transitions_SciFi-052.wav.meta
+    - Assets/Sounds/Just_Whoosh_004.wav
+    - Assets/Sounds/Just_Whoosh_004.wav.meta
+    - Assets/Sounds/Just_Whoosh_033.wav
+    - Assets/Sounds/Just_Whoosh_033.wav.meta
+    - Assets/Sounds/Just_Whoosh_051.wav
+    - Assets/Sounds/Just_Whoosh_051.wav.meta
+    - Assets/Sounds/Pass-By_Car_02.wav
+    - Assets/Sounds/Pass-By_Car_02.wav.meta
+    - Assets/Sounds/Pass-By_Sports-Car_Multiple_026.wav
+    - Assets/Sounds/Pass-By_Sports-Car_Multiple_026.wav.meta
+    - Assets/Sounds/Pass-By_Sports-Car_Single_015.wav
+    - Assets/Sounds/Pass-By_Sports-Car_Single_015.wav.meta
+    - Assets/Sounds/Pass-By_Sports-Car_Single_056.wav
+    - Assets/Sounds/Pass-By_Sports-Car_Single_056.wav.meta
+    - Assets/Sounds/Running.mp3
+    - Assets/Sounds/Running.mp3.meta
+    - Assets/Sounds/SotD_2013-10-23_(Swishes).wav
+    - Assets/Sounds/SotD_2013-10-23_(Swishes).wav.meta
+    - Assets/Sounds/Thud.wav
+    - Assets/Sounds/Thud.wav.meta
+    - Assets/Sounds/TinyTransiotions_Tiny-Transition_013.wav
+    - Assets/Sounds/TinyTransiotions_Tiny-Transition_013.wav.meta
+    - Assets/Sounds/TinyTransiotions_Whoosh_Source_Tube_03.wav
+    - Assets/Sounds/TinyTransiotions_Whoosh_Source_Tube_03.wav.meta
+    - Assets/Sounds/Transitions_14.wav
+    - Assets/Sounds/Transitions_14.wav.meta
+    - Assets/Sounds/Transportation Air Brakes From Fire Truck 02.wav
+    - Assets/Sounds/Transportation Air Brakes From Fire Truck 02.wav.meta
+    - Assets/Sounds/Transportation Bulldozer Driving Backing Up Away From Mic .wav
+    - Assets/Sounds/Transportation Bulldozer Driving Backing Up Away From Mic .wav.meta
+    - Assets/Sounds/Transportation Bulldozer Driving By 02.wav
+    - Assets/Sounds/Transportation Bulldozer Driving By 02.wav.meta
+    - Assets/Sounds/Transportation Bulldozer Idling 02.wav
+    - Assets/Sounds/Transportation Bulldozer Idling 02.wav.meta
+    - Assets/Sounds/Transportation Truck Diesel Truck By Slow 01.wav
+    - Assets/Sounds/Transportation Truck Diesel Truck By Slow 01.wav.meta
+    - Assets/Sounds/Transportation Truck Diesel Truck Drive By Fast 01.wav
+    - Assets/Sounds/Transportation Truck Diesel Truck Drive By Fast 01.wav.meta
+    - Assets/Sounds/Transportation Truck Diesel Truck Drive By Medium 01.wav
+    - Assets/Sounds/Transportation Truck Diesel Truck Drive By Medium 01.wav.meta
+    - Assets/Sounds/Transportation Truck Diesel Truck Idle Off  Mic In Front Close
+      01.wav
+    - Assets/Sounds/Transportation Truck Diesel Truck Idle Off  Mic In Front Close
+      01.wav.meta
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Long 01.wav
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Long 01.wav.meta
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Medium 01.wav
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Medium 01.wav.meta
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Multiple 01.wav
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Multiple 01.wav.meta
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Short 01.wav
+    - Assets/Sounds/Transportation Truck Envoy Honk Horn Short 01.wav.meta
+    - Assets/Sounds/Transportation Truck Garbage Truck Drive By 01.wav
+    - Assets/Sounds/Transportation Truck Garbage Truck Drive By 01.wav.meta
+    - Assets/Sounds/Trash-Bag_02.wav
+    - Assets/Sounds/Trash-Bag_02.wav.meta
+    - Assets/Sounds/Trumpeting.wav
+    - Assets/Sounds/Trumpeting.wav.meta
+    - Assets/Sounds/WhooshesImpacts2_Impacts_116.wav
+    - Assets/Sounds/WhooshesImpacts2_Impacts_116.wav.meta
+    - Assets/Sounds/WhooshesImpacts2_Whooshes_024_04.wav
+    - Assets/Sounds/WhooshesImpacts2_Whooshes_024_04.wav.meta
+    - Assets/Sounds/WhooshesImpacts2_Whooshes_032.wav
+    - Assets/Sounds/WhooshesImpacts2_Whooshes_032.wav.meta
+    - Assets/Sounds/WhooshesImpacts_Impact_01.wav
+    - Assets/Sounds/WhooshesImpacts_Impact_01.wav.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/ProjectVersion.txt
+    - 
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0

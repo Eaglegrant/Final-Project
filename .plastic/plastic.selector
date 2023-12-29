@@ -1,0 +1,4 @@
+repository "Final Project - Grant@eaglegrant522@cloud"
+  path "/"
+    smartbranch "/main" 
+     
