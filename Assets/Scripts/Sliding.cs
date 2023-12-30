@@ -36,9 +36,9 @@ public class Sliding : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
+        
         if (Input.GetKeyDown(slideKey) && (horizontalInput != 0 || verticalInput != 0))
-            StartSlide();
+            if (!pm.activeGrapple) StartSlide();
 
         if (Input.GetKeyUp(slideKey) && pm.sliding)
             StopSlide();

@@ -51,7 +51,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
-
+    int airJump;
     Vector3 moveDirection;
 
     Rigidbody rb;
@@ -91,9 +91,14 @@ public class PlayerMovementAdvanced : MonoBehaviour
             grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround[1]);
         }
         if (grounded && !activeGrapple)
+        {
             rb.drag = groundDrag;
+            airJump = 0;
+        }
         else
+        {
             rb.drag = 0;
+        }
         MyInput();
         SpeedControl();
         StateHandler();
@@ -113,10 +118,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // when to jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if(Input.GetKey(jumpKey) && readyToJump && (airJump <1))
         {
             readyToJump = false;
-
+            if (!grounded) airJump++;
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
@@ -288,6 +293,17 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // limiting speed on ground or in air
+        else if (state == MovementState.air)
+        {
+             Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+            // limit velocity if needed
+            if (flatVel.magnitude > moveSpeed)
+            {
+                Vector3 limitedVel = flatVel.normalized * moveSpeed;
+                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            }
+        }
         else
         {
             Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -324,7 +340,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         Invoke(nameof(SetVelocity), 0.1f);
 
         //if stuck
-        Invoke(nameof(ResetRestrictions), 3f);
+        Invoke(nameof(ResetRestrictions), 5f);
     }
     private Vector3 velocityToSet;
     private void SetVelocity()
