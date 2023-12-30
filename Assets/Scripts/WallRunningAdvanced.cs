@@ -23,13 +23,23 @@ public class WallRunningAdvanced : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
+    [Header("Limitations")]
+    public bool doJumpOnEndOfTimer = false;
+    public bool resetDoubleJumpsOnNewWall = true;
+    public bool resetDoubleJumpsOnEveryWall = false;
+    public int allowedWallJumps = 1;
+    public int maxSameWallHitCount;
+    private int sameWallHit;
     [Header("Detection")]
     public float wallCheckDistance;
     public float minJumpHeight;
-    private RaycastHit leftWallhit;
-    private RaycastHit rightWallhit;
+    private RaycastHit leftWallHit;
+    private RaycastHit rightWallHit;
     private bool wallLeft;
     private bool wallRight;
+    private bool wallRemembered;
+    private Transform lastWall;
+    private int wallJumpsDone;
 
     [Header("Exiting")]
     private bool exitingWall;
@@ -56,6 +66,8 @@ public class WallRunningAdvanced : MonoBehaviour
     {
         CheckForWall();
         StateMachine();
+        if (pm.grounded && lastWall != null)
+            lastWall = null;
     }
 
     private void FixedUpdate()
@@ -66,10 +78,44 @@ public class WallRunningAdvanced : MonoBehaviour
 
     private void CheckForWall()
     {
-        wallRight = Physics.Raycast(transform.position, orientation.right, out rightWallhit, wallCheckDistance, whatIsWall);
-        wallLeft = Physics.Raycast(transform.position, -orientation.right, out leftWallhit, wallCheckDistance, whatIsWall);
+        wallRight = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, whatIsWall);
+        wallLeft = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, whatIsWall);
+        if ((wallLeft || wallRight) && NewWallHit())
+        {
+            wallJumpsDone = 0;
+            wallRunTimer = maxWallRunTime;
+        }
+    }
+    private void RememberLastWall()
+    {
+        if (wallLeft)
+            lastWall = leftWallHit.transform;
+
+        if (wallRight)
+            lastWall = rightWallHit.transform;
     }
 
+    private bool NewWallHit()
+    {
+        if (lastWall == null)
+        {
+            sameWallHit = 0;
+            return true;
+        }
+
+        if (wallLeft && leftWallHit.transform != lastWall)
+        {
+            sameWallHit = 0;
+            return true;
+        }
+        else if (wallRight && rightWallHit.transform != lastWall)
+        {
+            sameWallHit = 0;
+            return true;
+        }
+
+        return false;
+    }
     private bool AboveGround()
     {
         return !Physics.Raycast(transform.position, Vector3.down, minJumpHeight, whatIsGround);
@@ -87,8 +133,18 @@ public class WallRunningAdvanced : MonoBehaviour
         // State 1 - Wallrunning
         if((wallLeft || wallRight) && verticalInput > 0 && AboveGround() && !exitingWall)
         {
-            if (!pm.wallrunning)
+            if (!pm.wallrunning && (wallJumpsDone < allowedWallJumps) && (sameWallHit < maxSameWallHitCount))
+            {
                 StartWallRun();
+                if (!NewWallHit())
+                {
+                    sameWallHit++;
+                }
+                else
+                {
+                    sameWallHit = 0;
+                }
+            }
 
             // wallrun timer
             if (wallRunTimer > 0)
@@ -128,7 +184,7 @@ public class WallRunningAdvanced : MonoBehaviour
     private void StartWallRun()
     {
         pm.wallrunning = true;
-
+        wallRemembered = false;
         wallRunTimer = maxWallRunTime;
 
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -143,7 +199,7 @@ public class WallRunningAdvanced : MonoBehaviour
     {
         rb.useGravity = useGravity;
 
-        Vector3 wallNormal = wallRight ? rightWallhit.normal : leftWallhit.normal;
+        Vector3 wallNormal = wallRight ? rightWallHit.normal : leftWallHit.normal;
 
         Vector3 wallForward = Vector3.Cross(wallNormal, transform.up);
 
@@ -166,6 +222,12 @@ public class WallRunningAdvanced : MonoBehaviour
         // weaken gravity
         if (useGravity)
             rb.AddForce(transform.up * gravityCounterForce, ForceMode.Force);
+
+        if (!wallRemembered)
+        {
+            RememberLastWall();
+            wallRemembered = true;
+        }
     }
 
     private void StopWallRun()
@@ -183,12 +245,16 @@ public class WallRunningAdvanced : MonoBehaviour
         exitingWall = true;
         exitWallTimer = exitWallTime;
 
-        Vector3 wallNormal = wallRight ? rightWallhit.normal : leftWallhit.normal;
+        Vector3 wallNormal = wallRight ? rightWallHit.normal : leftWallHit.normal;
 
         Vector3 forceToApply = transform.up * wallJumpUpForce + wallNormal * wallJumpSideForce;
-
+        bool firstJump = wallJumpsDone < allowedWallJumps;
+        wallJumpsDone++;
+        if (!firstJump)
+            forceToApply = new Vector3(forceToApply.x, 0f, forceToApply.z);
         // reset y velocity and add force
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         rb.AddForce(forceToApply, ForceMode.Impulse);
+        RememberLastWall();
     }
 }
