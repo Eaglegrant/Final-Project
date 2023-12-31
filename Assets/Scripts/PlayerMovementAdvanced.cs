@@ -48,6 +48,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float grappleFov = 95f;
     public float mainFov = 80f;
     public Transform orientation;
+    [Header("Air Control")]
+    public bool CanAirControl = true;
+    public float AirControlMaxSpeed = 2.5f;
 
     float horizontalInput;
     float verticalInput;
@@ -192,6 +195,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else
         {
             state = MovementState.air;
+            desiredMoveSpeed = AirControlMaxSpeed;
         }
 
         // check if desiredMoveSpeed has changed drastically
@@ -269,8 +273,19 @@ public class PlayerMovementAdvanced : MonoBehaviour
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
         // in air
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        else if (!grounded && !wallrunning)
+        {//TODO: MAKE AIR CONTROL HERE
+            if (((moveDirection.normalized.x >.25f) && (Mathf.Abs(transform.rotation.x) <45))|| ((moveDirection.normalized.z > .25f) && (135<= Mathf.Abs(transform.rotation.z)) && (Mathf.Abs(transform.rotation.z) <= 225)))
+            {
+                rb.AddForce(new Vector3(moveDirection.normalized.x *airMultiplier,moveDirection.normalized.y,moveDirection.normalized.z *airMultiplier) * moveSpeed * 8f *airMultiplier, ForceMode.Force);
+
+            }
+            else
+            {
+                rb.AddForce(moveDirection.normalized * moveSpeed * 8f *airMultiplier, ForceMode.Force);
+
+            }
+        }
 
         // turn gravity off while on slope
         if (!wallrunning)
